@@ -48,6 +48,6 @@ eureka:
 
 info:
   app:
-    name: "accounts"
-    description: "PTDBank Accounts Application"
+    name: "cards"
+    description: "PTDBank Cards Application"
     version: "1.0.0"

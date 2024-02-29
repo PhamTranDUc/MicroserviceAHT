@@ -1,5 +1,6 @@
 package com.PTD.accounts.mapper;
 
+import com.PTD.accounts.dto.CustomerDetailDto;
 import com.PTD.accounts.dto.CustomerDto;
 import com.PTD.accounts.entity.Customer;
 
@@ -17,6 +18,13 @@ public class CustomerMapper {
         customer.setName(customerDto.getName());
         customer.setEmail(customerDto.getEmail());
         return customer;
+    }
+
+    public static CustomerDetailDto mapToCustomerDetailDto(CustomerDetailDto customerDetailDto, Customer customer){
+        customerDetailDto.setMobileNumber(customer.getMobileNumber());
+        customerDetailDto.setName(customer.getName());
+        customerDetailDto.setEmail(customer.getEmail());
+        return customerDetailDto;
     }
 
 }
